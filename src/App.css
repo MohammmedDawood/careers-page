@@ -30,6 +30,7 @@
   --bs-warning: #ffc700;
   --bs-danger: #f1416c;
   --bs-dark: #181c32;
+  --bs-equatitiva:#a18965;
   --bs-white-rgb: 255, 255, 255;
   --bs-light-rgb: 245, 248, 250;
   --bs-primary-rgb: 0, 158, 247;
@@ -548,8 +549,11 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
+  /* background-color: #a18965; */
   padding-right: var(--bs-gutter-x, 1.5rem);
   padding-left: var(--bs-gutter-x, 1.5rem);
+  padding-top: var(--bs-gutter-x, 1.5rem);
+  padding-bottom: var(--bs-gutter-x, 1.5rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -48272,6 +48276,7 @@ html {
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  background-color: #a18965;
 }
 body,
 html {
@@ -48283,17 +48288,23 @@ html {
   font-family: Poppins, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background-color: #a18965;
+
 }
 @media (max-width: 991.98px) {
   body,
   html {
     font-size: 13px !important;
+      background-color: #a18965;
+
   }
 }
 @media (max-width: 767.98px) {
   body,
   html {
     font-size: 12px !important;
+      background-color: #a18965;
+
   }
 }
 body a:active,
@@ -48308,6 +48319,8 @@ body {
   display: flex;
   flex-direction: column;
   color: #181c32;
+    background-color: #a18965;
+
 }
 router-outlet {
   display: none;
@@ -49666,3 +49679,21 @@ body:not([data-kt-sticky-header="on"])
   border: 0;
 }
 
+#kt_body {
+  background-image: url(https://equitativa.com/images/home/header.jpg);
+  background-color: var(--bs-equatitiva);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 350px;
+}
+
+@media screen and (max-width: 991px) {
+  #kt_body {
+    background-image: url(https://equitativa.com/images/home/header.jpg);
+    background-color: var(--bs-equatitiva);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 200px;
+  }
+  
+}
